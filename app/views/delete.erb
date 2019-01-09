@@ -1,0 +1,5 @@
+<h1>WARNING!!! This will delete <%= @recipe.name %>! YOU CANNOT UNDO THIS ACTION!!!!!</h1>
+<form action="/recipes/<%= @recipe.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="DELETE" />
+</form>
